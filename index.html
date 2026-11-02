@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Security | Advanced Database System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="presentation">
+
+    <!-- SLIDE 1: COVER -->
+    <section class="slide active cover-slide">
+
+      <div class="cover-content">
+        <div class="eyebrow">SUBJECT PRESENTATION</div>
+
+        <p class="cover-subtitle">Advanced Database System</p><br>
+
+        <h1>Database Security<br><span>and Challenges</span></h1>
+
+        <div class="cover-line"></div>
+
+        <div class="person-details">
+          <div>
+            <small>Presented By</small>
+            <h3>Sanjana Suresh Ambike (A01)</h3>
+            <h3>Srushti Indrajeet Barale (A02) </h3>
+          </div>
+
+          <div class="guide">
+            <small>Under the Guidance of</small>
+            <h3>Mr. Satish M. Ranbhise Sir</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="cover-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="database-art">
+          <div class="db-top"></div>
+          <div class="db-layer layer-one"></div>
+          <div class="db-layer layer-two"></div>
+          <div class="db-layer layer-three"></div>
+
+          <div class="lock">
+            <div class="lock-shackle"></div>
+            <div class="lock-body"><span></span></div>
+          </div>
+        </div>
+
+        <div class="visual-caption">
+          SECURE · PROTECT · MONITOR
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- SLIDE 2: DATABASE SECURITY -->
+    <section class="slide">
+
+      <div class="section-tag">01 / INTRODUCTION</div>
+
+      <h2>Database Security</h2>
+
+      <p class="lead">
+        Database security protects data from unauthorized access,
+        modification, and destruction.
+      </p>
+
+      <div class="benefit-grid">
+
+        <article class="info-card">
+          <div class="card-icon">🔒</div>
+          <h3>Confidentiality</h3>
+          <p>Protects confidential information from unauthorized people.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">🛡️</div>
+          <h3>Access Control</h3>
+          <p>Prevents unauthorized access to the database.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">✓</div>
+          <h3>Data Integrity</h3>
+          <p>Maintains the accuracy and correctness of data.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="card-icon">☁</div>
+          <h3>Availability</h3>
+          <p>Ensures data is available whenever it is needed.</p>
+        </article>
+
+      </div>
+
+      <div class="example-box">
+        <div class="example-icon">🏦</div>
+
+        <div>
+          <h3>Real-Life Example: Banking System</h3>
+
+          <p>
+            A bank database stores customer names, account numbers,
+            balances, and transactions. Only authorized employees
+            can access them.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- SLIDE 3: HOW TO SECURE DATABASE -->
+    <section class="slide">
+
+      <div class="section-tag">02 / SECURITY METHODS</div>
+
+      <h2>How Do We Secure a Database?</h2>
+
+      <p class="lead">
+        Four important methods help protect a database from security threats.
+      </p>
+
+      <div class="methods-grid">
+
+        <article class="method-card">
+          <div class="method-number">01</div>
+          <div class="method-icon">👤</div>
+          <h3>Authentication</h3>
+
+          <p>
+            It checks who the user is, for example, using a username,
+            password, or OTP.
+          </p>
+        </article>
+
+        <div class="method-arrow">→</div>
+
+        <article class="method-card">
+          <div class="method-number">02</div>
+          <div class="method-icon">🔑</div>
+          <h3>Authorization</h3>
+
+          <p>
+            It decides what a user is allowed to do. For example,
+            an employee may view customer data but not delete it.
+          </p>
+        </article>
+
+        <div class="method-arrow">→</div>
+
+        <article class="method-card">
+          <div class="method-number">03</div>
+          <div class="method-icon">🔐</div>
+          <h3>Encryption</h3>
+
+          <p>
+            It converts important data into a form that cannot be
+            easily understood by unauthorized people.
+          </p>
+        </article>
+
+        <div class="method-arrow">→</div>
+
+        <article class="method-card">
+          <div class="method-number">04</div>
+          <div class="method-icon">📋</div>
+          <h3>Auditing</h3>
+
+          <p>
+            It keeps a record of activities, such as who accessed
+            the database or who changed the data.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="closing-note">
+        <span>✓</span>
+        So these methods help us make sure that only the right people
+        can access and use the database.
+      </div>
+
+    </section>
+
+
+    <!-- SLIDE 4: ADVANCED DATABASE SYSTEMS -->
+    <section class="slide">
+
+      <div class="section-tag">03 / MODERN DATABASES</div>
+
+      <h2>Security in Advanced Database Systems</h2>
+
+      <p class="lead">
+        Modern databases create additional security requirements.
+      </p>
+
+      <div class="table-wrap">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Database Type</th>
+              <th>Key Feature</th>
+              <th>Security Example</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><span class="table-icon">☁</span> Cloud Database</td>
+              <td>Misconfiguration</td>
+              <td>An AWS or Azure database exposed publicly</td>
+            </tr>
+
+            <tr>
+              <td><span class="table-icon">🌐</span> Distributed Database</td>
+              <td>Multiple locations</td>
+              <td>Data stored across different servers</td>
+            </tr>
+
+            <tr>
+              <td><span class="table-icon">📊</span> Big Data</td>
+              <td>Huge data volume</td>
+              <td>Millions of customer records</td>
+            </tr>
+
+            <tr>
+              <td><span class="table-icon">📡</span> IoT Database</td>
+              <td>Many devices</td>
+              <td>Smart devices continuously sending data</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="modern-note">
+        <span class="note-symbol">i</span>
+
+        <p>
+          As databases become more advanced and connected,
+          protecting stored data becomes more important.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- SLIDE 5: CHALLENGES -->
+    <section class="slide">
+
+      <div class="section-tag">04 / SECURITY ISSUES</div>
+
+      <div class="challenge-heading">
+
+        <div>
+          <div class="big-kicker">CHALLENGES</div>
+          <h2>Major Security Challenges</h2>
+        </div>
+
+        <div class="warning-mark">!</div>
+
+      </div>
+
+      <div class="challenge-grid">
+
+        <article class="challenge-card">
+          <span class="challenge-icon">⚠</span>
+          <h3>SQL Injection</h3>
+          <p>Attacker manipulates SQL queries to access data.</p>
+        </article>
+
+        <article class="challenge-card">
+          <span class="challenge-icon">👤</span>
+          <h3>Insider Threats</h3>
+          <p>Authorized users misuse their privileges.</p>
+        </article>
+
+        <article class="challenge-card">
+          <span class="challenge-icon">📤</span>
+          <h3>Data Leakage</h3>
+          <p>Sensitive information reaches unauthorized people.</p>
+        </article>
+
+        <article class="challenge-card">
+          <span class="challenge-icon">⚖</span>
+          <h3>Privacy and Compliance</h3>
+          <p>Personal data must be protected by regulation.</p>
+        </article>
+
+        <article class="challenge-card">
+          <span class="challenge-icon">⚙</span>
+          <h3>Performance vs Security</h3>
+          <p>Strong security can increase system overhead.</p>
+        </article>
+
+      </div>
+
+      <div class="sql-layout">
+
+        <div class="sql-code">
+
+          <div class="code-header">
+            <span>SQL INJECTION EXAMPLE</span>
+            <span class="code-dot"></span>
+          </div>
+
+          <pre><code>SELECT * FROM Users
+WHERE username = 'admin'
+AND password = '' OR '1'='1';</code></pre>
+
+        </div>
+
+        <div class="sql-explanation">
+
+          <h3>Why does it work?</h3>
+
+          <p>
+            Unsafe code joins user input straight into the query.
+            The <strong>OR '1'='1'</strong> part is always true,
+            so the attacker can bypass the password check.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SLIDE 6: SOLUTION AND CONCLUSION -->
+    <section class="slide">
+
+      <div class="section-tag">05 / SOLUTIONS</div>
+
+      <div class="big-kicker">SOLUTION AND CONCLUSION</div>
+
+      <h2>Building a Secure Database</h2>
+
+      <p class="lead">
+        A secure database uses multiple layers of protection.
+      </p>
+
+      <div class="security-flow">
+
+        <div class="flow-step">Strong<br>Authentication</div>
+        <span>→</span>
+
+        <div class="flow-step">Role-Based<br>Access</div>
+        <span>→</span>
+
+        <div class="flow-step">Encryption</div>
+        <span>→</span>
+
+        <div class="flow-step">Monitoring &<br>Auditing</div>
+        <span>→</span>
+
+        <div class="flow-step">Regular<br>Backup</div>
+
+      </div>
+
+      <div class="secure-result">
+        <span>✓</span> SECURE DATABASE
+      </div>
+
+      <div class="cia-grid">
+
+        <article class="cia-card">
+          <div class="cia-letter">C</div>
+          <h3>Confidentiality</h3>
+          <p>Only authorized people can access data.</p>
+        </article>
+
+        <article class="cia-card">
+          <div class="cia-letter">I</div>
+          <h3>Integrity</h3>
+          <p>Data remains accurate and trustworthy.</p>
+        </article>
+
+        <article class="cia-card">
+          <div class="cia-letter">A</div>
+          <h3>Availability</h3>
+          <p>Data is available when needed.</p>
+        </article>
+
+      </div>
+
+      <div class="example-box banking-example">
+
+        <div class="example-icon">🏦</div>
+
+        <div>
+          <h3>Banking Example</h3>
+
+          <p>
+            Authentication protects accounts, authorization limits
+            employee access, encryption protects transactions,
+            auditing detects suspicious activity, and backup supports recovery.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SLIDE 7: THANK YOU -->
+    <section class="slide thank-slide">
+
+      <div class="thank-decoration">✦</div>
+
+
+      <h1>THANK <span>YOU!</span></h1>
+
+      <p>Thank you for your valuable time and attention.</p>
+
+      <div class="thank-line"></div>
+
+      <small>DATABASE SECURITY · ADVANCED DATABASE SYSTEM</small>
+
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
